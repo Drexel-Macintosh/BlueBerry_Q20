@@ -201,7 +201,7 @@
                               \      aA        |       0        |                    SPACE                  |          SYM          |         aA    /
                                 -------------------------------------------------------------------------------------------------------------------
         */
-                 		&to  0                                                                                	&MAN
+                 		&none                                                                                	&none
 
 		            &kp  TAB			 &sk GLOBE		      &mkp LCLK			&glb ESC H		 &sk LALT
 
@@ -218,7 +218,7 @@
         alt_layer {
 
             bindings = <        
-                		&to  0                                                                            	 &to  0
+                		&none                                                                            	 &none
 
     	         	&kp PG_DN    			 &mtt C_PREV C_VOL_DN		      &kp C_PP			&mtt C_NEXT C_VOL_UP	 &kp PG_UP
 
@@ -235,30 +235,33 @@
         upper_layer {
 
             bindings = <        
-                 &to  0                                                                                       &to  0
 
-    		&bt BT_SEL 0            	 &bt BT_SEL 1                 &bt BT_CLR                &bt BT_SEL 2             &bt BT_SEL 3
+		&none													&none
+ 
+    		&mkp LCLK			&mkp RCLK			&mkp MCLK				&mkp MB4				&mkp MB5  
 
-    &none       	&none   	&none     	&sys_reset	&ext_power EP_TOG          &none         	&none	           &none           &none      	   &none
-    &none   		&none	  	&none	 	&none     	&none	          	   &none     	  	&none	           &none           &none      	   &none
-    &to  0  		&none    	&none    	&none      	&bl BL_DEC       	   &bl BL_TOG   	&bl BL_INC         &none           &bootloader     &none
-
-    		&to  0               		 &none	               	      &out OUT_TOG              &none                    &none
+    &kp Q		&kp W     	&kp E    	&kp R	  	  	&kp T			&kp Y		&kp U	    	&kp I	 	 &kp O		&kp P
+    &kp A	     	&kp S   	&kp D      	&kp F	 		&kp G		     	&kp H	      	&kp J       	&kp K       	 &kp L		&kp BSPC
+    &EMU	 	&kp Z     	&kp X     	&kp C    		&kp V	     		&kp B		&kp N        	&kp M       	 &kp DLLR	&kp ENTER
+	
+    		&SHFT				 &hm2 EP_TOG N0			&kp SPACE				&EALT				&sk LCTRL
             >;
         };
 
         media_layer {
 
             bindings = <        
-		&to  0													&to  0
- 
-    &none			&none			&none				&none				&none  
 
-    &none		&none     	&none    	&none  	  		&none			&none		&none    	&none	 	 &none		&none
-    &none	     	&none   	&none      	&none	 		&none		     	&none	      	&none       	&none       	 &none		&none
-    &none     	 	&none     	&none     	&none    		&none	     		&none		&none       	&none       	 &none		&none
-	
-    &none			&to  0			&none				&none				&none
+		&none													&none
+
+    		&bt BT_SEL 0            	 &bt BT_SEL 1                 &bt BT_CLR                &bt BT_SEL 2             &bt BT_SEL 3
+
+    &none       	&none   	&none     	&sys_reset	&ext_power EP_TOG	   &none         	&none	           &none           &none      	   &none
+    &none   		&none	  	&none	 	&none     	&none	          	   &none     	 	&none	           &none	   &none      	   &none
+    &to  0  		&none    	&none    	&none		&bl BL_DEC       	   &bl BL_TOG   	&bl BL_INC         &none           &bootloader     &none
+
+    		&to  0               		 &none	               	      &out OUT_TOG              &none                    &none
+
             >;
         };
     };
