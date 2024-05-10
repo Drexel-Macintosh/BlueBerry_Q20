@@ -41,29 +41,29 @@
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             bindings = <&mkp LCLK>, <&bt BT_CLR>;
         };
 
         ALTL: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             bindings = <&sl ALT>, <&to ALT>;
         };
 
         SHFT: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
             bindings = <&sk LSHFT>, <&kp CLCK>;
         };
 
         MED: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
-            bindings = <&sl MEDIA>, <&to MEDIA>;
+            tapping-term-ms = <250>;
+            bindings = <&to 0>, <&to MEDIA>;
         };
 
         MAN: tap_dance_4 {
@@ -76,15 +76,22 @@
         EALT: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
             bindings = <&sk LALT>, <&kp LALT>;
         };
 
         ECTRL: tap_dance_6 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
             bindings = <&sk LCTRL>, <&kp LC(SPACE)>;
+        };
+
+        EMU: tap_dance_7 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&to 0>, <&to MEDIA>;
         };
 
 // Macro Behaviors
@@ -147,7 +154,7 @@
 	      tapping-term-ms = <200>;
 	      quick-tap-ms = <125>;
 	      require-prior-idle-ms = <125>;
-	      bindings = <&kp>, <&sk>;
+	      bindings = <&sk>, <&kp>;
    	 };
 
 	alt_to: behavior_alt_to {
