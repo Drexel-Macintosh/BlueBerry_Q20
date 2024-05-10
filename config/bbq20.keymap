@@ -244,7 +244,7 @@
     &kp A	     	&kp S   	&kp D      	&kp F	 		&kp G		     	&kp H	      	&kp J       	&kp K       	 &kp L		&kp BSPC
     &EMU	 	&kp Z     	&kp X     	&kp C    		&kp V	     		&kp B		&kp N        	&kp M       	 &kp DLLR	&kp ENTER
 	
-    		&SHFT				 &hm2 EP_TOG N0			&kp SPACE				&EALT				&sk LCTRL
+    		&SHFT				 &hm2 EP_TOG N0			&kp SPACE				&ECTRL				&sk LGUI
             >;
         };
 
